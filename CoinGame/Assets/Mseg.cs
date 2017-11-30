@@ -18,7 +18,7 @@ public class Mseg : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       // Num = segnum.seggN();
+        Num = segnum.seggN();
         if (Num == 0)
         {
             if (Input.GetKey(KeyCode.A))
