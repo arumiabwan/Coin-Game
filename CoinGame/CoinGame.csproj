@@ -230,6 +230,7 @@
     <Compile Include="Assets\segE.cs" />
     <Compile Include="Assets\segF.cs" />
     <Compile Include="Assets\segG.cs" />
+    <Compile Include="Assets\segnum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
