@@ -39,7 +39,7 @@ public class Mseg : MonoBehaviour {
             }
         }
 
-        if (cou == 5)
+        if (cou == 20)
         {
             num--;
             cou = 0;

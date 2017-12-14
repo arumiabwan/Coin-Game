@@ -19,7 +19,7 @@ public class Sensor : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.name == "coins(Clone)")
+        if (other.name == "coin_fbx(Clone)")
         {
             On_count++;
             Debug.Log(other.name + "Exit");
