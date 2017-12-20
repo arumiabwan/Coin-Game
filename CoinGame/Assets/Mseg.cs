@@ -5,6 +5,7 @@ using UnityEngine;
 public class Mseg : MonoBehaviour {
     public int cou=0;
     public int Num = 0;
+    public int check;
     public static int num=0;
     public static int numm()
     {
@@ -18,6 +19,21 @@ public class Mseg : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (check == 0)
+        {
+            num = ramdom.rammm1();
+        }
+        else if (check == 1)
+        {
+            num = ramdom.rammm2();
+        } else if(check == 2)
+        {
+            num = ramdom.ramm3;
+        }
+        if (Input.GetKey(KeyCode.F1))
+        {
+            num = 1;
+        }
         Num = segnum.seggN();
         if (Num == 0)
         {
@@ -41,12 +57,12 @@ public class Mseg : MonoBehaviour {
 
         if (cou == 20)
         {
-            num--;
+            //num--;
             cou = 0;
         }
             if(num < 0)
         {
-            num = 9;
+            //num = 9;
         }
 	}
 }

@@ -223,6 +223,7 @@
     <Compile Include="Assets\CoinSetScript.cs" />
     <Compile Include="Assets\Mseg.cs" />
     <Compile Include="Assets\Pusher_move.cs" />
+    <Compile Include="Assets\ramdom.cs" />
     <Compile Include="Assets\segA.cs" />
     <Compile Include="Assets\segB.cs" />
     <Compile Include="Assets\segC.cs" />

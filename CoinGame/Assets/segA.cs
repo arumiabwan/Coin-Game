@@ -16,8 +16,8 @@ public class segA : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         seg1 = Mseg.numm();
-        Color w = Color.white;
-        Color b = Color.black;
+        Color w = Color.black;
+        Color b = Color.green;
         if (seg1 == 0) {
             gameObject.GetComponent<Renderer>().material.color = b; 
         }
