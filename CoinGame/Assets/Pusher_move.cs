@@ -12,8 +12,9 @@ public class Pusher_move : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         origin = transform.position;
-        rb = this.GetComponent<Rigidbody>();
-        
+        //rb = this.GetComponent<Rigidbody>();
+        transform.GetComponent<Rigidbody>().velocity = new Vector3(3.0f, 0.0f, 0.0f);
+
     }
 	
 	// Update is called once per frame
@@ -28,6 +29,8 @@ public class Pusher_move : MonoBehaviour {
 
         //transform.position = origin + offset;
         rb.MovePosition(origin + offset);
+
+        //rb.velocity = new Vector3(3.0f, 0.0f, 0.0f); ;
         
 
 
