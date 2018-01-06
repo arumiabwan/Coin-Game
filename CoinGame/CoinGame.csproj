@@ -222,8 +222,10 @@
     <Compile Include="Assets\AddCoinScript.cs" />
     <Compile Include="Assets\CoinSetScript.cs" />
     <Compile Include="Assets\lever_coin_set.cs" />
+    <Compile Include="Assets\lever_coin_set2.cs" />
     <Compile Include="Assets\lever_move_script.cs" />
     <Compile Include="Assets\lever_move_script2.cs" />
+    <Compile Include="Assets\lever_move_script3.cs" />
     <Compile Include="Assets\Mseg.cs" />
     <Compile Include="Assets\Pusher_move.cs" />
     <Compile Include="Assets\ramdom.cs" />

@@ -20,7 +20,7 @@ public class Pusher_move : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Vector3 offset = new Vector3(0, 0, 3*Mathf.Sin(Time.time)-1);
+        Vector3 offset = new Vector3(0, 0, 2*Mathf.Sin(Time.time)-1);
 
         //Sensor se1 = refObj.GetComponent<Sensor>();
 
