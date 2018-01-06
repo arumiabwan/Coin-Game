@@ -6,7 +6,7 @@ public class lever_coin_set : MonoBehaviour {
 
 	 public Transform Basecoin;
 
-    private Vector3 setpos;
+    //private Vector3 setpos;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +17,7 @@ public class lever_coin_set : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        setpos = lever_move_script2.pos;
+        //setpos = lever_move_script2.pos;
 
         if (Input.GetKey(KeyCode.Z) || Input.GetKeyDown(KeyCode.X)) {
 

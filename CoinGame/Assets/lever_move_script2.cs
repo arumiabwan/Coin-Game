@@ -34,13 +34,13 @@ public class lever_move_script2 : MonoBehaviour {
             up_down++;
         }
 
-        if (Input.GetKey(KeyCode.J) && left_right<=2)//右移動
+        if (Input.GetKey(KeyCode.J) && left_right<=1)//右移動
         {
             transform.Rotate(new Vector3(0, 8, 0), 1);
             left_right++;
         }
 
-        if (Input.GetKey(KeyCode.K) && left_right>=-6)//左移動
+        if (Input.GetKey(KeyCode.K) && left_right>=-15)//左移動
         {
             transform.Rotate(new Vector3(0, 8, 0), -1);
             left_right--;
