@@ -20,8 +20,8 @@ public class segA : MonoBehaviour {
         seg1 = Mseg.numm();
         NUM = Mseg.Check;
         num  =seg1;
-        Color w = Color.black;
-        Color b = Color.green;
+        Color w = Color.white;
+        Color b = Color.red;
         if (seg1 == 0) {
             gameObject.GetComponent<Renderer>().material.color = b; 
         }

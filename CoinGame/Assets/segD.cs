@@ -14,8 +14,8 @@ public class segD : MonoBehaviour {
 	void Update () {
         seg = Mseg.numm();
         num = seg;
-        Color w = Color.black;
-        Color b = Color.green;
+        Color w = Color.white;
+        Color b = Color.red;
         if (seg == 0)
         {
             gameObject.GetComponent<Renderer>().material.color = b;

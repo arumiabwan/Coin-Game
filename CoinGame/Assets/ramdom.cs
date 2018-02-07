@@ -13,6 +13,8 @@ public class ramdom : MonoBehaviour {
     string Atari = "あたり";
     string Hazure = "はずれ";
     int Pp,pp;
+    public int po = 1000;
+    int Po=0;
     public static int rammm1() {
         return ramm1;
     }
@@ -40,15 +42,21 @@ public class ramdom : MonoBehaviour {
         {
             Pp = 0;
         }
-        
-        if (Input.GetKeyDown(KeyCode.S))
+
+        if (po > 0)
         {
-            for (int i=0; i < 999999999999999; i++)
+
+            if (Input.GetKey(KeyCode.S))
             {
-                ram = r.Next(1000);
-                pp = Pp;
+            po--;
+                for (int i = 0; i < 100; i++)
+                {
+                    ram = r.Next(1000);
+                    pp = Pp;
+                }
             }
         }
+ 
         if (pp < 10)
         {
             ramm1 = pp;
