@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class ramdom : MonoBehaviour {
     public int ram;
+    public static int RAM;
+    public int num1,num2,num3;
     public static int ramm1;
     public static int ramm2;
     public static int ramm3;
+    public string Hantei;
+    string Atari = "あたり";
+    string Hazure = "はずれ";
+    int Pp,pp;
     public static int rammm1() {
         return ramm1;
     }
@@ -15,6 +21,10 @@ public class ramdom : MonoBehaviour {
     }
     public static int rammm3() {
         return ramm3;
+    }
+    public static int rammm()
+    {
+        return RAM;
     }
         System.Random r = new System.Random(1000);
     
@@ -25,12 +35,45 @@ public class ramdom : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.S))
+        Pp++;
+        if(Pp > 50)
         {
-            ram = r.Next(1000);
+            Pp = 0;
         }
-        ramm1 = ram / 100 % 10;
-        ramm2 = ram /  10 % 10;
-        ramm3 = ram /   1 % 10;
-	}
-}
+        
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            for (int i=0; i < 999999999999999; i++)
+            {
+                ram = r.Next(1000);
+                pp = Pp;
+            }
+        }
+        if (pp < 10)
+        {
+            ramm1 = pp;
+            ramm2 = pp;
+            ramm3 = pp;
+        }
+        else
+        {
+            ramm1 = ram / 100 % 10;
+            ramm2 = ram / 10 % 10;
+            ramm3 = ram / 1 % 10;
+        }
+        if (ramm1 == ramm2 && ramm1 == ramm3)
+        {
+            Hantei = Atari;
+        }
+        else
+        {
+            Hantei = Hazure;
+        }
+            RAM = ramm1*100+ramm2*10+ramm3;
+
+            num1 = ramm1;
+            num2 = ramm2;
+            num3 = ramm3;
+        }
+    }
+

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class segA : MonoBehaviour {
     public static int seg1 = 0;
+    public int num;
+    public int NUM;
     public static int segg() {
         return seg1;
     }
@@ -16,6 +18,8 @@ public class segA : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         seg1 = Mseg.numm();
+        NUM = Mseg.Check;
+        num  =seg1;
         Color w = Color.black;
         Color b = Color.green;
         if (seg1 == 0) {
