@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AddCoinScript.cs" />
+    <Compile Include="Assets\Autoseg.cs" />
     <Compile Include="Assets\CoinSetScript.cs" />
     <Compile Include="Assets\lever_coin_set.cs" />
     <Compile Include="Assets\lever_coin_set2.cs" />
