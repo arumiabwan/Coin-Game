@@ -19,16 +19,19 @@ public class lever_coin_set : MonoBehaviour {
 
         //setpos = lever_move_script2.pos;
 
-        if (Input.GetKey(KeyCode.Z) || Input.GetKeyDown(KeyCode.X)) {
+        if (Input.GetKeyDown(KeyCode.N) && RemoveCoin.havecoin >= 0)
+        {
 
-            //Vector3 offset = new Vector3(-1, 2, 0);
+            RemoveCoin.havecoin--;
+
+            Vector3 offset = new Vector3(0, 0, 1);
 
 
-            //Instantiate(Basecoin, setpos+offset, transform.rotation);
-            Instantiate(Basecoin, transform.position, transform.rotation);
+
+            Instantiate(Basecoin, transform.position + offset, transform.rotation);
             //生成するオブジェクト（コピー）,このオブジェクトの座標、回転を反映
 
         }
 
-	}
+    }
 }

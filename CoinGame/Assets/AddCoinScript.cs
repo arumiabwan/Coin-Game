@@ -14,14 +14,37 @@ public class AddCoinScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKey(KeyCode.Z) || Input.GetKeyDown(KeyCode.X)) {
+        if (Input.GetKey(KeyCode.Z)|| Input.GetKeyDown(KeyCode.X)) {
+
+            
 
             Vector3 offset = new Vector3(0, 0, 1);
 
+
+            
             Instantiate(Basecoin, transform.position + offset, transform.rotation);
             //生成するオブジェクト（コピー）,このオブジェクトの座標、回転を反映
 
         }
+        if(Input.GetKey(KeyCode.P)&&RemoveCoin.havecoin>0) {
 
-	}
+            RemoveCoin.havecoin--;
+
+        }
+        
+        //if (Input.GetKeyDown(KeyCode.N) && RemoveCoin.havecoin>=0)
+        //{
+
+        //    RemoveCoin.havecoin--;
+
+        //    Vector3 offset = new Vector3(0, 0, 1);
+
+
+
+        //    Instantiate(Basecoin, transform.position + offset, transform.rotation);
+        //    //生成するオブジェクト（コピー）,このオブジェクトの座標、回転を反映
+
+        //}
+
+    }
 }

@@ -18,7 +18,7 @@ public class Sensor : MonoBehaviour {
 
     public static Vector3 offset_sensor;
 
-    public static int On_count;
+    public static int On_count=1;
 
     public bool on_check;
 

@@ -22,11 +22,11 @@ public class lever_coin_set2 : MonoBehaviour
 
         //setpos = lever_move_script2.pos;
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B) && RemoveCoin.havecoin >= 0)
         {
 
             //Vector3 offset = new Vector3(-1, 2, 0);
-
+            RemoveCoin.havecoin--;
 
             //Instantiate(Basecoin, setpos+offset, transform.rotation);
             Instantiate(Basecoin, transform.position, transform.rotation);

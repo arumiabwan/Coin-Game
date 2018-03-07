@@ -52,6 +52,7 @@ public class Autoseg : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        In = Sensor.On_count;
         NOKORI = In;
         ATAI = Out;
         HANTEI = Hit;
@@ -62,6 +63,7 @@ public class Autoseg : MonoBehaviour {
         }
 		if(Input.GetKeyUp(KeyCode.F) && dt == 0 && In > 0 && (ramdom.po == 0 || ramdom.po > time))
         {
+            Sensor.On_count--;
             st = 1;
 
         }
