@@ -43,7 +43,7 @@ public class lever_move_script3 : MonoBehaviour
             left_right++;
         }
 
-        if (Input.GetKey(KeyCode.F) && left_right >= 0)//左移動
+        if (Input.GetKey(KeyCode.R) && left_right >= 0)//左移動
         {
             transform.Rotate(new Vector3(0, 8, 0), -1);
             left_right--;
