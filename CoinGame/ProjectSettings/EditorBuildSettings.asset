@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/title.unity
     guid: ed6be5fdddd13ba4f9116a28e8207170
-  - enabled: 1
+  - enabled: 0
     path: Assets/maintain.unity
     guid: c6cac93136a6c544996563e62aa74120
+  - enabled: 1
+    path: Assets/slotmarge.unity
+    guid: 65a13000670730245b895f1a7e3aadfc

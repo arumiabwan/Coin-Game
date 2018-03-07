@@ -8,7 +8,7 @@ public class StartGame : MonoBehaviour {
     // Use this for initialization
     public void LoadingNewScene() {
 
-        SceneManager.LoadScene("maintain");
+        SceneManager.LoadScene("slotmarge");
 
     }
 }
