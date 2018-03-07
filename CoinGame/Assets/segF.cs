@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class segF : MonoBehaviour {
     public static int seg = 0;
+    public int num;
     // Use this for initialization
     void Start () {
 		
@@ -12,8 +13,9 @@ public class segF : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         seg = Mseg.numm();
-        Color w = Color.black;
-        Color b = Color.green;
+        num = seg;
+        Color w = Color.white;
+        Color b = Color.red;
         if (seg == 0)
         {
             gameObject.GetComponent<Renderer>().material.color = b;
