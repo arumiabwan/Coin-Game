@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*機能
+ 
+    重なり判定は「Coin」タグが付いているものが"当たって"かつ"出るとき"
+    On_countは重なり判定が出るたびに加算
+    On_countがある限りslotを回すことができる
+    slotを回したらOn_countを一つ減らす
+
+ */
+
+
 public class Sensor : MonoBehaviour {
 
     private Vector3 origin;
@@ -19,7 +29,7 @@ public class Sensor : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.name == "coin_fbx2(Clone)")
+        if (other.tag == "Coin")
         {
             On_count++;
             Debug.Log(other.name + "Exit");
@@ -30,8 +40,8 @@ public class Sensor : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        origin = transform.position;
-        offset_sensor = transform.position;
+        //origin = transform.position;
+        //offset_sensor = transform.position;
 
 	}
 	
@@ -40,7 +50,7 @@ public class Sensor : MonoBehaviour {
         //offset = pm1.offsetcopy;
         //offset = new Vector3(0, 0, 3 * Mathf.Sin(Time.time) - 1);
        
-        transform.position = origin + offset_sensor;
+        //transform.position = origin + offset_sensor;
 
         //重なリ判定
        

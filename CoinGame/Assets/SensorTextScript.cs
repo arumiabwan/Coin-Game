@@ -12,6 +12,6 @@ public class SensorTextScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-      this.GetComponent<Text>().text= "重なった数:" + Sensor.On_count.ToString();
+      this.GetComponent<Text>().text= "重なった数：" + Sensor.On_count.ToString()+"残りコイン："+RemoveCoin.havecoin.ToString();
 	}
 }

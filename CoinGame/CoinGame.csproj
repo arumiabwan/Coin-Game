@@ -223,6 +223,7 @@
     <Compile Include="Assets\Autoseg.cs" />
     <Compile Include="Assets\Backtitle.cs" />
     <Compile Include="Assets\CoinSetScript.cs" />
+    <Compile Include="Assets\HaveCoinText.cs" />
     <Compile Include="Assets\lever_coin_set.cs" />
     <Compile Include="Assets\lever_coin_set2.cs" />
     <Compile Include="Assets\lever_move_script.cs" />
@@ -232,6 +233,7 @@
     <Compile Include="Assets\PushedTitleButton.cs" />
     <Compile Include="Assets\Pusher_move.cs" />
     <Compile Include="Assets\ramdom.cs" />
+    <Compile Include="Assets\RemoveCoin.cs" />
     <Compile Include="Assets\segA.cs" />
     <Compile Include="Assets\segB.cs" />
     <Compile Include="Assets\segC.cs" />
